@@ -12,10 +12,15 @@ class Tweet {
     String userName
     String content
     Date hitDate
-    def location = []
+    String location
+    
+    def oldTweets = []
 
     void tweet(){
-        println "$userName says '$content' on $hitDate.toString()"
-        print ln "Tweeted from $location"
+        println "$userName said '$content' from $location"
+    }
+
+    void tweetHistory(){
+        oldTweets.each{println oldTweet}
     }
 }
