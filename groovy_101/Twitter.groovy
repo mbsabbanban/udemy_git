@@ -1,9 +1,5 @@
 // create a new instance of Tweet
-Tweet twt = new Tweet()
-    
-twt.userName = "@sabbanban"
-twt.content = "My first tweet!"
-twt.hitDate = new Date()
+Tweet twt = new Tweet("sabbanban", "My first tweet!")
 twt.location = "Bayside, NY"
 
 // assign some tweets
@@ -25,4 +21,4 @@ twt.tweet()
 twt.oldTweets
 
 // Final method to call entire history
-// twt.tweetHistory() Would like to fix this method in the future
+twt.tweetHistory() // Method was fixed using a closure
